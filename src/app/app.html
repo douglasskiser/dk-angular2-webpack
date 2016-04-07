@@ -1,0 +1,17 @@
+<header>
+  <button class="btn btn-icon text-lg right text-light"
+          (click)="toggleMenu()">
+    &#9776;
+  </button>
+  <div class="logo">
+    <a [routerLink]="['Home']" class="text-light">dougKiser</a>
+  </div>
+</header>
+<main>
+  <router-outlet></router-outlet>
+</main>
+<footer>
+</footer>
+<menu [isActive]="isMenuActive"
+      (toggle)="toggleMenu($event)">
+</menu>

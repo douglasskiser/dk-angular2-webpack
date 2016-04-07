@@ -1,0 +1,43 @@
+@import "colors";
+
+$base_font_size: 1rem;
+
+.text {
+  font-size: $base_font_size;
+
+  &-xs {
+    font-size: $base_font_size / 1.5;
+  }
+  &-sm {
+    font-size: $base_font_size / 1.25;
+  }
+  &-md {
+    font-size: $base_font_size * 1.25;
+  }
+  &-lg {
+    font-size: $base_font_size * 1.5;
+  }
+  &-xl {
+    font-size: $base_font_size * 3;
+  }
+
+  &-primary {
+    color: $primary;
+  }
+
+  &-secondary {
+    color: $secondary;
+  }
+
+  &-light {
+    color: $background;
+  }
+
+  &-accent {
+    color: $accent;
+  }
+
+  &-center {
+    text-align: center;
+  }
+}

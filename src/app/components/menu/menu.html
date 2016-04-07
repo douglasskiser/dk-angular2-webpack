@@ -1,0 +1,18 @@
+<div *ngIf="isActive" class="overlay animated zoomIn">
+  <div class="menu-container">
+    <div class="close-container">
+      <button type="button"
+              (click)="toggleMenu()"
+              class="right btn btn-icon text-lg">
+        &times;
+      </button>
+    </div>
+    <nav class="nav-container">
+      <ul class="nav">
+        <li *ngFor="#navItem of navItems" class="nav-item">
+          <a [routerLink]="navItem.route" (click)="toggleMenu()">{{navItem.label}}</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
